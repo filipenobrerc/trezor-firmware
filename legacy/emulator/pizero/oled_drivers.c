@@ -300,8 +300,8 @@ static void oled_begin(void) {
 }
 
 static bool oled_init_spi(uint8_t OLED_TYPE) {
-	rst = RPI_V2_GPIO_P1_22;
-	dc = RPI_V2_GPIO_P1_18;
+	rst = RPI_V2_GPIO_P1_27;
+	dc = RPI_V2_GPIO_P1_25;
 	cs = BCM2835_SPI_CS0;
 
 	// Select OLED parameters
